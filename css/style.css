@@ -462,19 +462,14 @@ line-height: 100%;
 	.aside-menu.active {
 		display: block;
 		position: absolute;
-		z-index: 1;
-		background-color: #fff;
+		background-color: aliceblue;
+		top: 0px;
 	}
-}
+	}
+
 
 
 @media screen and (max-width: 500px) {
-	.aside-menu.active {
-		display: block;
-		position: absolute;
-		z-index: 1;
-		background-color: #fff;
-	}
   .table-header{
 		float: left;
     flex-direction: column;
@@ -488,15 +483,14 @@ line-height: 100%;
     flex-direction: column;
     align-items: center;
   }
-
-  /* Дополнительные стили для подвала информации при узком экране, если нужно */
   .footer-info {
 		margin: 20px auto;
   }
-
-  /* Дополнительные стили для пагинации при узком экране, если нужно */
   .pagination {
 		margin: 20px auto;
   }
 
 }
+
+
+
