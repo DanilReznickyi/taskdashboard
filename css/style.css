@@ -9,7 +9,8 @@ body {
 }
 
 .aside {
-	height: 100vh;
+	position: relative;
+	height: 1198px;
 	width: 306px;
 	background: #FFF;
 	box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
@@ -352,4 +353,150 @@ line-height: 100%;
 
 .pagination-btn:hover {
   background: #DDD;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+	body {
+		display: block;
+	}
+	
+	.aside {
+		height: 100px;
+		width: 100%;
+		display: flex;
+	}
+	.aside-logo-img {
+		padding-top: 20px;
+		margin-right: 8px;
+	}
+	.aside-logo-text {
+		padding-top: 20px;
+	}
+	
+	.aside-logo-subtext {
+		margin-top: 36px;
+	}
+	.aside-menu {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding-top: 10px;
+	}
+	
+	.aside-menu a {
+		margin-bottom: 0;
+	}
+	.persone {
+		margin-left: auto;
+		position: relative;
+		bottom: 0;
+		margin-right: 15px;
+	}
+ main {
+	display: block;
+ }
+ .table-wrapper {
+	margin: 0 auto;
+ }
+
+	
+}
+@media screen and (max-width: 990px) {
+	body {
+		display: block;
+	}
+	
+	.aside {
+		height: 100px;
+		width: 100%;
+		display: flex;
+	}
+	.aside-logo-img {
+		padding-top: 20px;
+		margin-right: 8px;
+	}
+	.aside-logo-text {
+		padding-top: 20px;
+	}
+	
+	.aside-logo-subtext {
+		margin-top: 36px;
+	}
+	.aside-menu {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding-top: 10px;
+	}
+	
+	.aside-menu a {
+		margin-bottom: 0;
+	}
+	.persone {
+		margin-left: auto;
+		position: relative;
+		bottom: 0;
+		margin-right: 15px;
+	}
+ main {
+	display: block;
+ }
+ .wrap {
+  position: relative;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
+ .table-wrapper {
+	margin: 0 auto;
+	width: 100%;
+ }
+
+	
+}
+
+@media screen and (max-width: 880px) {
+	.aside-menu {
+		display: none;
+	}
+	.aside-menu.active {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		background-color: #fff;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	.aside-menu.active {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		background-color: #fff;
+	}
+  .table-header{
+		float: left;
+    flex-direction: column;
+		margin-left: 30px;
+	}
+	.table-text{
+		margin-left: 0;
+	}
+  .table-footer {
+		margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Дополнительные стили для подвала информации при узком экране, если нужно */
+  .footer-info {
+		margin: 20px auto;
+  }
+
+  /* Дополнительные стили для пагинации при узком экране, если нужно */
+  .pagination {
+		margin: 20px auto;
+  }
+
 }
